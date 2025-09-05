@@ -1,0 +1,61 @@
+.form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.school-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-form label {
+  font-weight: bold;
+  margin: 8px 0 5px;
+}
+
+.school-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #005fa3;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin: -5px 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

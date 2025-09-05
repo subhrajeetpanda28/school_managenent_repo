@@ -1,0 +1,96 @@
+/* ShowSchools.css */
+
+/* Container for the whole section */
+.schools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.schools-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a; /* nice blue heading */
+}
+
+/* Grid layout for school cards */
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each school card */
+.school-card {
+  background-color: #f8fafc; /* light background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.school-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image in card */
+.school-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Info section */
+.school-info {
+  padding: 1rem;
+}
+
+.school-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #0f172a;
+}
+
+.school-info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+/* Responsive adjustments */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .school-card img {
+    height: 160px;
+  }
+
+  .school-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .school-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .schools-container {
+    padding: 1rem;
+  }
+
+  .school-card img {
+    height: 140px;
+  }
+
+  .school-info h3 {
+    font-size: 1rem;
+  }
+
+  .school-info p {
+    font-size: 0.85rem;
+  }
+}
